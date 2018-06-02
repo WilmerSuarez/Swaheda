@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Swaheda</string>
+    <string name="acount_settings_menu_title">Account Settings</string>
+    <string name="find_friends_menu_title">Find Friends</string>
+    <string name="log_out_menu_title">Log Out</string>
+    <string name="search_action_title">Search…</string>
+    <string name="accept_btn_request">Accept</string>
+    <string name="decline_btn_request">Decline</string>
+    <string name="request_sent_btn_change">Request Sent</string>
+    <string name="cancel_request_btn_change">Cancel Friend Request</string>
+    <string name="send_request_btn_change">Send Friend Request</string>
+    <string name="unfriend_btn_change">Unfriend</string>
+    <string name="send_request_button_change">Send Friend Request</string>
+    <string name="unfriend_button_change">Unfriend</string>
+    <string name="accept_button_request_change">Accept Friend Request</string>
+    <string name="cancel_request_button_change">Cancel Friend Request</string>
+</resources>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatActivity"
+    android:background="#FFFFFF">
+
+    <include
+        android:id="@+id/chat_upper_bar_id"
+        layout="@layout/upper_bar_layout">
+    </include>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/messagesList_RV_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/chat_upper_bar_id"
+        android:layout_above="@+id/LinLayout_chat_id"
+        app:layout_constraintBottom_toTopOf="@+id/LinLayout_chat_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chat_upper_bar_id"
+        android:background="#FFFFFF">
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/LinLayout_chat_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:background="#FFFFFF"
+        android:minHeight="48dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_alignParentBottom="true">
+
+        <ImageButton
+            android:id="@+id/sendImageBtn_id"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/colorchangebutton_3"
+            android:clickable="true"
+            android:hapticFeedbackEnabled="true">
+        </ImageButton>
+
+        <EditText
+            android:id="@+id/inputMessage_id"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="start|center"
+            android:hint="Enter Message..."
+            android:maxLines="5">
+        </EditText>
+
+        <ImageButton
+            android:id="@+id/sendMessageBtn_id"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/colorchangebutton_2"
+            android:clickable="true"
+            android:hapticFeedbackEnabled="true">
+        </ImageButton>
+
+    </LinearLayout>
+
+</RelativeLayout>

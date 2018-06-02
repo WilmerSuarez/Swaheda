@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AllUsersActivity"
+    android:background="#FFFFFF">
+
+    <include
+        layout="@layout/upper_bar_layout"
+        android:id="@+id/all_users_bar_id"
+        android:background="#FFFFFF"/>
+
+    <EditText
+        android:id="@+id/inputSearch_id"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/all_users_bar_id"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/color_change_button_4"
+        android:gravity="start|center"
+        android:hint="@string/search_action_title"
+        android:maxLines="1"
+        android:textColor="#FFFFFF"
+        android:inputType="textPersonName"
+        android:paddingStart="10dp"
+        android:ems="10"
+        android:textColorHint="#FFFFFF"
+        android:textCursorDrawable="@color/white">
+    </EditText>
+
+    <ImageButton
+        android:id="@+id/searchButton_id"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_toEndOf="@id/inputSearch_id"
+        android:layout_below="@id/all_users_bar_id"
+        android:src="@drawable/ic_action_search"
+        android:background="@drawable/color_change_button_4"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/allUsersList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/inputSearch_id"
+        android:background="#FFFFFF"
+        android:hapticFeedbackEnabled="true">
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>
